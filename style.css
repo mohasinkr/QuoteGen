@@ -1,0 +1,64 @@
+body{
+    background-color: #170840;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-content{
+    position:absolute;
+    top:35%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    background-color: #089d5a;
+    width: 600px; 
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#quote{
+    font-size: 40px;
+    margin: 0 25px;
+    flex: 1 1 auto;
+}
+
+.card .bottom-banner{
+    height:70px;
+    background-color: #025730;
+}
+
+#author{
+    margin-top:25px;
+    margin-left:15px;
+}
+
+
+
+.bi-twitter{
+    position: relative;
+    color:white;
+    font-size:25px;
+    margin-right: 10px;
+    float:right;
+}
+
+.bi-heart-fill{
+    color:red;
+}
+
+button{
+    color: white;
+    width:150px;
+    height:50px;
+    background-color: black;
+    margin-top:60px;
+    border-radius: 8px;
+}
+
+.creator-tag{
+    color:white;
+}
