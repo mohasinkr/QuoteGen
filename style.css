@@ -1,6 +1,6 @@
 body{
     background-color: #170840;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .main-content{
@@ -21,7 +21,7 @@ body{
 }
 
 #quote{
-    font-size: 40px;
+    font-size: 35px;
     margin: 0 25px;
     flex: 1 1 auto;
 }
