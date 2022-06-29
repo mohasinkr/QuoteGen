@@ -15,7 +15,8 @@ body{
     flex-direction: column;
     color:white;
     background-color: #089d5a;
-    width: 600px; 
+    min-width: 45vw; 
+    min-height:25vh;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -61,4 +62,5 @@ button{
 
 .creator-tag{
     color:white;
+    width:100%;
 }
