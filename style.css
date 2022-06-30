@@ -5,8 +5,8 @@ body{
 
 .main-content{
     position:absolute;
-    top:35%;
-    left:50%;
+    top:35vh;
+    left:50vw;
     transform: translate(-50%,-50%);
 }
 
@@ -15,36 +15,34 @@ body{
     flex-direction: column;
     color:white;
     background-color: #089d5a;
-    min-width: 45vw; 
-    min-height:25vh;
+    min-width: 300px; 
+    min-height:150px;
     border-radius: 8px;
     overflow: hidden;
 }
 
 #quote{
-    font-size: 35px;
+    font-size: 25px;
     margin: 0 25px;
-    flex: 1 1 auto;
+    /* flex: 1 1 auto; */
 }
 
-.card .bottom-banner{
-    height:70px;
+.card footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height:50px;
     background-color: #025730;
 }
 
-#author{
-    margin-top:25px;
-    margin-left:15px;
+.author{
+    margin-left: 10px;
 }
 
-
-
 .bi-twitter{
-    position: relative;
     color:white;
     font-size:25px;
     margin-right: 10px;
-    float:right;
 }
 
 .bi-heart-fill{
@@ -63,4 +61,9 @@ button{
 .creator-tag{
     color:white;
     width:100%;
+}
+
+/* FOR MOBILE PHONES */
+@media only screen and (max-width:768px){
+
 }
