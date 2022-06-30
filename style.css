@@ -4,6 +4,10 @@ body{
 }
 
 .main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position:absolute;
     top:35vh;
     left:50vw;
@@ -59,6 +63,7 @@ button{
 }
 
 .creator-tag{
+    text-align: center;
     color:white;
     width:100%;
 }
