@@ -1,16 +1,17 @@
-document.addEventListener("DOMContentLoaded",start);
+const author = document.getElementById("author");
+const quote = document.getElementById("quote");
 
-function start(){
-    const quote = document.getElementById('quote');
-    const author = document.getElementById('author');
+const nextbtn = document.getElementById('next-btn');
 
-    getQuote();
-    }
+nextbtn.addEventListener('click',getQuote)
 
-// async function getQuote(){
-//     const uri = ''
-// }
-async function getQuote(){
-
-const response = await response("https://api.quotable.io/random");
-const data = await response.json();
+async function getQuote() {
+  try {
+    const response = await fetch("https://api.quotable.io/random");
+    const responseJSON = await response.json();
+    quote.innerText = `${responseJSON.content}`;
+    author.innerText = `- ${responseJSON.author}`;
+  } catch (error) {
+    console.log("Error fetching the API!");
+  }
+}
