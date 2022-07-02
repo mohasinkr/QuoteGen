@@ -12,11 +12,13 @@ body{
     top:35vh;
     left:50vw;
     transform: translate(-50%,-50%);
+    height:calc(100vh-100px);
 }
 
 .card{
     display: flex;
     flex-direction: column;
+    flex:1;
     color:white;
     background-color: #089d5a;
     min-width: 300px; 
@@ -27,7 +29,7 @@ body{
 
 #quote{
     font-size: 25px;
-    margin: 0 25px;
+    margin: 25px;
     /* flex: 1 1 auto; */
 }
 
@@ -37,6 +39,7 @@ body{
     justify-content: space-between;
     min-height:50px;
     background-color: #025730;
+    margin-top: auto;
 }
 
 #author{
@@ -58,17 +61,26 @@ button{
     width:150px;
     height:50px;
     background-color: black;
-    margin-top:60px;
+    margin-top:50px;
     border-radius: 8px;
 }
 
-.creator-tag{
-    text-align: center;
+.creator-footer{
+    font-size: 12px;
     color:white;
-    width:100%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-/* FOR MOBILE PHONES */
-@media only screen and (max-width:768px){
+.creator-footer>p{
+    text-align: center;
+}
 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .card{
+        width:500px;
+    }
 }
