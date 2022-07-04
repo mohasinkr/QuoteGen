@@ -1,4 +1,4 @@
-const author = document.getElementById("author");
+const author_name = document.getElementById("author");
 const quote = document.getElementById("quote");
 const tweetbtn = document.getElementById('tweet-share');
 
@@ -9,10 +9,15 @@ tweetbtn.addEventListener('click',share);
 
 async function getQuote() {
   try {
-    const response = await fetch("https://api.quotable.io/random");
-    const responseJSON = await response.json();
-    quote.innerText = `${responseJSON.content}`;
-    author.innerText = `- ${responseJSON.author}`;
+    const api_url = 'https://api.quotable.io/random';
+
+    const response = await fetch(api_url);
+    const data = await response.json();
+
+    const {content,author} = data;
+
+    quote.innerText = `${content}`;
+    author_name.innerText = `- ${author}`;
 
   } catch (error) {
     console.log("Error fetching the API!");
